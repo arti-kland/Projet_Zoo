@@ -17,6 +17,6 @@ abstract class Animal{
     protected abstract function getNoise(): string;
 
     public function noise(): string{
-       return$this->getNoise;
+       return$this->getNoise();
     }
 }
