@@ -1,0 +1,9 @@
+
+{
+  "name": "votre-nom/zoo",
+  "autoload": {
+    "psr-4": {
+      "App\\":"src"
+    }
+  }
+}
