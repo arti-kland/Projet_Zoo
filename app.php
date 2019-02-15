@@ -10,6 +10,9 @@ use App\Animals\Zebra;
 use App\Animals\Elephant;
 use App\Animals\Parrot;
 use App\Animals\Dove;
+use App\Enclosure;
+
+$newEnclosure = new Enclosure();
 
 $animals = [
     //poissons
@@ -43,9 +46,18 @@ $animals = [
     //Colombes
     $Dove = new Dove('Blanche'),
     $Dove = new Dove('Grise'),
+    //Baleine
+    $Whale = new Whale('LA Grosse'),
 ];
 
+foreach ($animals as $animal)
+{
+    $newEnclosure->addAnimal($animal);
+}
+
+/*
 for ($i = 0; $i < count($animals); $i++) {
     echo $animals[$i]->getName() . " : " . $animals[$i]->noise();
     echo "\n";
 }
+*/

@@ -1,5 +1,5 @@
 {
-  "name": "votre-nom/zoo",
+  "name": "jean-philippe-mauviel/zoo",
   "autoload": {
     "psr-4": {
       "App\\":"src"
