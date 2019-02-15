@@ -13,9 +13,9 @@ class Enclosure
 
     public function __toString(): string
     {
-        $News = "Je suis :";
-        foreach ($this->animals as $animal) {
-            $News .= $animal->getName() . " : " . $animal->noise();
+        $News = " ";
+        foreach ($this->animals as $animal){
+            $News .= "Je m'appel : " .$animal->getName() . ", qui dit : " . $animal->noise(). "\n";
         }
         return $News;
     }
